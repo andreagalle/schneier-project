@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cat $1 | tr 'a-zA-Z' 'n-za-mN-ZA-N' > rot13_$1 && mv rot13_$1 $1 
+
+#cat $1 | tr 'a-zA-Z' 'n-za-mN-ZA-N' --output=$1 
